@@ -1,0 +1,30 @@
+[2022-07-11 09:14:27,073] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: LocalIngestionDAD.download scheduled__2022-03-05T06:00:00+00:00 [queued]>
+[2022-07-11 09:14:27,105] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: LocalIngestionDAD.download scheduled__2022-03-05T06:00:00+00:00 [queued]>
+[2022-07-11 09:14:27,106] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-11 09:14:27,107] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-07-11 09:14:27,108] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-11 09:14:27,158] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): download> on 2022-03-05 06:00:00+00:00
+[2022-07-11 09:14:27,173] {standard_task_runner.py:52} INFO - Started process 8092 to run task
+[2022-07-11 09:14:27,179] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'LocalIngestionDAD', 'download', 'scheduled__2022-03-05T06:00:00+00:00', '--job-id', '114', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_postgres.py', '--cfg-path', '/tmp/tmpe8ferjk8', '--error-file', '/tmp/tmpn93bc0o3']
+[2022-07-11 09:14:27,181] {standard_task_runner.py:80} INFO - Job 114: Subtask download
+[2022-07-11 09:14:27,284] {task_command.py:370} INFO - Running <TaskInstance: LocalIngestionDAD.download scheduled__2022-03-05T06:00:00+00:00 [running]> on host 3dadab756f88
+[2022-07-11 09:14:27,387] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:202: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-07-11 09:14:27,493] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=LocalIngestionDAD
+AIRFLOW_CTX_TASK_ID=download
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-05T06:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-05T06:00:00+00:00
+[2022-07-11 09:14:27,496] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-07-11 09:14:27,499] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -sSL https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-03.parquet > /opt/***/output_2022-03.parquet']
+[2022-07-11 09:14:27,540] {subprocess.py:85} INFO - Output:
+[2022-07-11 09:14:34,164] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-07-11 09:14:34,288] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=LocalIngestionDAD, task_id=download, execution_date=20220305T060000, start_date=20220711T091427, end_date=20220711T091434
+[2022-07-11 09:14:34,370] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-07-11 09:14:34,527] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

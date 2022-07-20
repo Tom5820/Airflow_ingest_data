@@ -1,0 +1,54 @@
+[2022-07-11 09:15:06,932] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: LocalIngestionDAD.convert scheduled__2022-04-05T06:00:00+00:00 [queued]>
+[2022-07-11 09:15:06,986] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: LocalIngestionDAD.convert scheduled__2022-04-05T06:00:00+00:00 [queued]>
+[2022-07-11 09:15:06,987] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-11 09:15:06,988] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-07-11 09:15:06,989] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-11 09:15:07,059] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): convert> on 2022-04-05 06:00:00+00:00
+[2022-07-11 09:15:07,071] {standard_task_runner.py:52} INFO - Started process 8142 to run task
+[2022-07-11 09:15:07,078] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'LocalIngestionDAD', 'convert', 'scheduled__2022-04-05T06:00:00+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_postgres.py', '--cfg-path', '/tmp/tmpmk9eneyx', '--error-file', '/tmp/tmptjxdyhu4']
+[2022-07-11 09:15:07,080] {standard_task_runner.py:80} INFO - Job 117: Subtask convert
+[2022-07-11 09:15:07,320] {task_command.py:370} INFO - Running <TaskInstance: LocalIngestionDAD.convert scheduled__2022-04-05T06:00:00+00:00 [running]> on host 3dadab756f88
+[2022-07-11 09:15:07,621] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:202: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-07-11 09:15:07,873] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=LocalIngestionDAD
+AIRFLOW_CTX_TASK_ID=convert
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-05T06:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-04-05T06:00:00+00:00
+[2022-07-11 09:15:07,888] {logging_mixin.py:115} INFO - /opt/***/output_2022-04.parquet
+[2022-07-11 09:17:31,873] {python.py:173} INFO - Done. Returned value was: None
+[2022-07-11 09:17:32,019] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=LocalIngestionDAD, task_id=convert, execution_date=20220405T060000, start_date=20220711T091506, end_date=20220711T091732
+[2022-07-11 09:17:32,289] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-07-11 09:17:32,403] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-07-12 08:41:02,483] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: LocalIngestionDAD.convert scheduled__2022-04-05T06:00:00+00:00 [queued]>
+[2022-07-12 08:41:02,542] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: LocalIngestionDAD.convert scheduled__2022-04-05T06:00:00+00:00 [queued]>
+[2022-07-12 08:41:02,547] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-12 08:41:02,549] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-07-12 08:41:02,551] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-12 08:41:02,636] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): convert> on 2022-04-05 06:00:00+00:00
+[2022-07-12 08:41:02,649] {standard_task_runner.py:52} INFO - Started process 1323 to run task
+[2022-07-12 08:41:02,656] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'LocalIngestionDAD', 'convert', 'scheduled__2022-04-05T06:00:00+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_postgres.py', '--cfg-path', '/tmp/tmp6a1kzvuf', '--error-file', '/tmp/tmpii7jgsft']
+[2022-07-12 08:41:02,660] {standard_task_runner.py:80} INFO - Job 24: Subtask convert
+[2022-07-12 08:41:02,886] {task_command.py:370} INFO - Running <TaskInstance: LocalIngestionDAD.convert scheduled__2022-04-05T06:00:00+00:00 [running]> on host ef58f039b0e2
+[2022-07-12 08:41:02,996] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:202: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-07-12 08:41:03,116] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=LocalIngestionDAD
+AIRFLOW_CTX_TASK_ID=convert
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-05T06:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-04-05T06:00:00+00:00
+[2022-07-12 08:41:03,120] {logging_mixin.py:115} INFO - /opt/***/output_2022-04.parquet
+[2022-07-12 08:42:43,755] {python.py:173} INFO - Done. Returned value was: None
+[2022-07-12 08:42:43,791] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=LocalIngestionDAD, task_id=convert, execution_date=20220405T060000, start_date=20220712T084102, end_date=20220712T084243
+[2022-07-12 08:42:43,897] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-07-12 08:42:43,964] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

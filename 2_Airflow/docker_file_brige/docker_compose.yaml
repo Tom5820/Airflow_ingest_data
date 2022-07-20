@@ -1,0 +1,29 @@
+services:
+  pgdatabase:
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=tom_123
+      - POSTGRES_DB=ny_taxi
+    volumes:
+      - postgres_dtb:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - airflow
+  # pgadmin:
+  #   image: dpage/pgadmin4
+  #   environment:
+  #     - PGADMIN_DEFAULT_EMAIL=Tom@admin.com
+  #     - PGADMIN_DEFAULT_PASSWORD=tom_123
+  #   ports:
+  #     - "8080:80"
+
+volumes:
+  postgres_dtb:
+
+networks:
+  airflow:
+    external:
+      name: 2_airflow_default
+# 2_airflow_default
